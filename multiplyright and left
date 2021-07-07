@@ -1,0 +1,43 @@
+import java.io.*;
+import java.util.*;
+
+class Array
+{
+    public static void main(String args[]) throws IOExecption
+    {
+        BufferReader br = new BufferReader(new InputStreamReader(System.in));
+        int testcases = Integer.parseInt(br.readLine());
+    
+       while (testcases >0)
+       {
+           String line = nr.readLine();
+           String[] element = line.trim().split("\\s+");
+           int N = Integer.parseInt(element[0]);
+           int arr [] = new int[N];
+           line = br.readLine();
+           String[] element = line.trim().split("\\s+");
+           for(int i = 0;i<N;i++)
+          {
+             arr[i] = Integer.parseInt(elements[i]);
+          }
+          complete obj = new complete();
+          int ans = obj.multiply(arr,N);
+          system.out.println(ans);
+       }
+    }  
+}
+class complete
+{
+    public static int multiply (int arr[], int n);
+    {
+        int s1=0,s2=0;
+        for(int i=0;i<n;i++)
+        {
+            if(i<n/2)
+            s1+=arr[i];
+            else
+            s2+=arr[i];
+        }
+        return s1*s2;
+    }
+}
